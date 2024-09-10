@@ -17,3 +17,24 @@ var count: Int = 0
     set(value) {
         if (value >=0) field = value
     }
+
+
+val chassis: String = "12345ABC"
+
+var colour: String = "Blue"
+
+var distance: Double = 0.0
+
+lateinit var owner: String
+
+const val WHEELS = 4
+
+val lazyValue: String by lazy {
+    ""
+}
+
+var fuel: Double = 0.0
+    get () = field
+    set(value) {
+        if (value > 0) field += value
+    }
