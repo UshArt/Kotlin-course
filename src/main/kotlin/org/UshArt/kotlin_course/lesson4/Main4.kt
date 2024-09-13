@@ -1,4 +1,4 @@
-package org.UshArt.kotlin_course.lesson3
+package com.UshArt.org.UshArt.kotlin_course.lesson4
 
 val myInt: Int = 215165
 
