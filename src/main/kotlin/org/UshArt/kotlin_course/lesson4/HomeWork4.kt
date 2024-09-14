@@ -24,7 +24,7 @@ val meDouble: Double = -0.001
 
 val meString: String "OpenAI"
 
-val me2String: String "true"
+//“true” синтаксическая ошибка
 
 val my2Char: Char = '9'
 
@@ -54,10 +54,9 @@ val me4String: String "SpaceX"
 
 val my3Boolean: Boolean = true
 
-val me5String: String
-    get() = "🤯"
+//“🤯” синтаксическая ошибка
 
-val my4Int: Int = 65535
+//‘65535’ синтаксическая ошибка
 
 val my3Long: Long = 72057594037927935L
 
