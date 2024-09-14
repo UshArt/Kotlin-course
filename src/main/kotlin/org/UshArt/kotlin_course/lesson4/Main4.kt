@@ -1,4 +1,4 @@
-package com.UshArt.org.UshArt.kotlin_course.lesson4
+package org.UshArt.kotlin_course.lesson4
 
 val myInt: Int = 215165
 
@@ -10,7 +10,7 @@ val myShort: Short = 32000
 
 val myByte: Byte = 120
 
-val myDouble: Double = 5.99
+val myDouble: Double = 5.50
 
 val isKotlinFun: Boolean = true
 
