@@ -32,7 +32,7 @@ val my2Int: Int = 2048
 
 val my2Long: Long = 10000000000L
 
-val me2Float: Float = 5.75f
+val my2Float: Float = 5.75f
 
 val me2Double: Double = 1.414
 
