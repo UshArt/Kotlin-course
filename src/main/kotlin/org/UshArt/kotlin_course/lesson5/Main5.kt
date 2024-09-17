@@ -21,9 +21,18 @@ fun main() {
     number += 3
     number -= 2
 
-    number++
+    ++number
 
-    val example = ((8+1) >= 9) || (6 - 2 != 4) && (2 * 3 == 6)
+//    val example = ((8+1) >= 9) || (6 - 2 != 4) && (2 * 3 == 6)
+//    val primer = (3 + 2 < 6) && (4 * 2 == 8)
+//    ((var a = 4; a-- == 4) || (5 * 2 != 10)) && (3 + 1 == 4)
+//    (var b = 3; b++ > 3) && (6 / 2 == 3) || (7 - 2 != 5)
+//    (var c = 1; ++c < 3) || ((4 % 2 == 0) && (5 + 0 == 5))
 
-    println(sum)
+    var name: String? = null
+
+    val  result = name ?: "Unknown"
+
+    println(isEqual)
+
 }
