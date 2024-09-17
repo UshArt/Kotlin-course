@@ -21,5 +21,9 @@ fun main() {
     number += 3
     number -= 2
 
+    number++
+
+    val example = ((8+1) >= 9) || (6 - 2 != 4) && (2 * 3 == 6)
+
     println(sum)
 }
