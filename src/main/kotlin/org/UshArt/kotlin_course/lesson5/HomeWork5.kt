@@ -36,7 +36,7 @@ package org.UshArt.kotlin_course.lesson5
 //
 //
 //Продвинутый уровень
-//(var f = 6; --f >= 5) || ((3 * 2 == 6) && (9 - 4 != 5)) false || (true && false) = false
+//(var f = 6; --f >= 5) || ((3 * 2 == 6) && (9 - 4 != 5)) true || (true && false) = true
 //
 //((var g = 0; g++ != 0) && (4 + 2 == 6)) || (5 / 1 == 5) (false && true) || true = true
 //
