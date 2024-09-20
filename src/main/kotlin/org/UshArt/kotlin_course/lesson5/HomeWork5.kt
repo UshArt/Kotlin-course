@@ -25,7 +25,7 @@ package org.UshArt.kotlin_course.lesson5
 //Сложный уровень
 //((4 * 3) < 13) && !(8 / 4 == 2) || (10 % 3 != 1) true && false || false = false
 //
-//((14 - 5) > 8) || (9 / 3 == 3) && !(7 + 0 != 7) false || true && true = true
+//((14 - 5) > 8) || (9 / 3 == 3) && !(7 + 0 != 7) true || true && true = true
 //
 //((2 + 3) <= 5) && (16 / 4 == 4) || !(6 % 2 == 0) true && true || false = true
 //
