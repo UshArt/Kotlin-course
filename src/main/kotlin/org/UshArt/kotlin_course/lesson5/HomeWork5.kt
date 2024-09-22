@@ -72,7 +72,7 @@ fun main() {
     println(getAttenuation(100.0, null))
 
     println("\ntask 2:")
-    println(getDeliveryPrice(100.0))
+    println(getDeliveryPrice(93.0))
     println(getDeliveryPrice(null))
 
     println("\ntask 3:")
@@ -86,7 +86,7 @@ fun getAttenuation(soundIntensity: Double, attenuationCoef: Double?): Double {
 }
 
 fun getDeliveryPrice(price: Double?): Double {
-    val defaultPrice = 50.0
+    val defaultPrice = 55.0
     val deliveryPrice = 0.005
     return (price ?: defaultPrice) * deliveryPrice
 }
