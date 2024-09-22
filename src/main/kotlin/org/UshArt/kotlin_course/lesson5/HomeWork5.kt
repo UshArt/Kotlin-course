@@ -1,5 +1,7 @@
 package org.UshArt.kotlin_course.lesson5
 
+import kotlin.time.times
+
 //Простой уровень
 //(12 / 3 > 3) && (5 * 2 == 10) пример решения: true && true = true
 //
@@ -65,10 +67,31 @@ package org.UshArt.kotlin_course.lesson5
 //Контекст: Вы проводите метеорологические измерения. Одним из важных показателей является атмосферное давление, которое должно быть зафиксировано. Лаборант приносит вам набор показателей, но по пути может что-нибудь потерять. Задача - сообщить об ошибке в случае отсутствия показаний атмосферного давления.
 
 fun main() {
-    printVolume(soundintensity = 25.5)
+    println("task 1:")
+    println(getAttenuation(100.0, 0.4))
+    println(getAttenuation(100.0, null))
+
+    println("\ntask 2:")
+    println(getDeliveryPrice(100.0))
+    println(getDeliveryPrice(null))
+
+    println("\ntask 3:")
+    checkAtmosphericPressure("report") // correct
+    checkAtmosphericPressure(null) // throw exception
 }
 
-fun printVolume(soundintensity: Double){
-    val koef = 0.5
-    println(soundintensity * koef)
+fun getAttenuation(soundIntensity: Double, attenuationCoef: Double?): Double {
+    val defaultAttenuationCoef = 0.5
+    return (attenuationCoef ?: defaultAttenuationCoef) * soundIntensity
 }
+
+fun getDeliveryPrice(price: Double?): Double {
+    val defaultPrice = 50.0
+    val deliveryPrice = 0.005
+    return (price ?: defaultPrice) * deliveryPrice
+}
+
+fun checkAtmosphericPressure(indicators: String?) {
+    indicators ?: throw Exception("missing indicator")
+}
+
