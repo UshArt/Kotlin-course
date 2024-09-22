@@ -1,17 +1,5 @@
 package org.UshArt.kotlin_course.lesson6
 
-fun main () {
-    println(seasons(month)) //Задание 1
-    println(calculationOfYears(yearOfDog)) //Задание 2
-    println(whatIsBetter(way)) //Задание 3
-    println(calculationOfBonus(shopping)) //Задание 4
-    println(fileType(fileExtension))//Задание 5
-    println(conversion(27.0, "C"))//Задание 6
-    println(conversion(63.8, "F"))//Задание 6
-    println(recommends(airTemperature))//Задание 7
-    println(filmsСategories(age))//Задание 8
-}
-
 //Задание 1: "Определение Сезона"
 //Контекст: Напишите функцию, которая на основе номера месяца возвращает сезон года.
 
@@ -49,6 +37,18 @@ fun main () {
 //Контекст: Кинотеатр предлагает фильмы разных возрастных категорий. Напишите функцию,
 // которая принимает возраст зрителя и возвращает доступные для него категории фильмов:
 // "детские", "подростковые", "18+".
+
+fun main () {
+    println(seasons(month)) //Задание 1
+    println(calculationOfYears(yearOfDog)) //Задание 2
+    println(whatIsBetter(way)) //Задание 3
+    println(calculationOfBonus(shopping)) //Задание 4
+    println(fileType(fileExtension))//Задание 5
+    println(conversion(27.0, "C"))//Задание 6
+    println(conversion(63.8, "F"))//Задание 6
+    println(recommends(airTemperature))//Задание 7
+    println(filmsСategories(age))//Задание 8
+}
 
 val month: Int = 4
 
