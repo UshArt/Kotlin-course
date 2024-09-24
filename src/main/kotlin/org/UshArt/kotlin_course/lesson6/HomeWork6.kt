@@ -111,14 +111,18 @@ fun fileType(fileExtension: String) : String {
 }
 
 fun conversion(temperature: Double, scale: String): String {
-    return if (scale == "C") {
-        val result = (temperature + 32) * 1.8
-        "$result F"
-    } else if (scale == "F") {
-        val result = (temperature - 32) / 1.8
-        "$result C"
-    } else {
-        "Invalid scale"
+    return when (scale) {
+        "C" -> {
+            val result = (temperature + 32) * 1.8
+            "$result F"
+        }
+        "F" -> {
+            val result = (temperature - 32) / 1.8
+            "$result C"
+        }
+        else -> {
+            "Invalid scale"
+        }
     }
 }
 
