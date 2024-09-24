@@ -129,14 +129,19 @@ fun conversion(temperature: Double, scale: String): String {
 val airTemperature: Int = -35
 
 fun recommends(airTemperature: Int) : String {
-    return if (airTemperature in -30 downTo -1) {
-        "куртка, шапка, перчатки"
-    } else if (airTemperature in 0..14)  {
-        "ветровка"
-    } else if (airTemperature in 15..35)  {
-        "футболка и шорты"
-    } else {
-        "не выходить умрешь"
+    return when (airTemperature) {
+        in -30..-1 -> {
+            "куртка, шапка, перчатки"
+        }
+        in 0..14 -> {
+            "ветровка"
+        }
+        in 15..35 -> {
+            "футболка и шорты"
+        }
+        else -> {
+            "не выходить умрешь"
+        }
     }
 }
 
