@@ -1,4 +1,4 @@
-package UshArt.kotlin_course.Lesson7
+package org.UshArt.kotlin_course.Lesson7
 
 //fun main() {
 //    for (i in 1..10) {
