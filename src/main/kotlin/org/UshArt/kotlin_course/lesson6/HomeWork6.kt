@@ -103,18 +103,10 @@ val fileExtension: String = "PDF"
 
 fun fileType(fileExtension: String) : String {
     return when (fileExtension) {
-        "TXT" -> {
-            "Текстовый документ"
-        }
-        "JPG" -> {
-            "Изображение"
-        }
-        "PDF" -> {
-            "Файл"
-        }
-        else -> {
-            "Неизвестный тип"
-        }
+        "TXT" -> "Текстовый документ"
+        "JPG" -> "Изображение"
+        "PDF" -> "Файл"
+        else -> "Неизвестный тип"
     }
 }
 
