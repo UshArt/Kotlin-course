@@ -53,16 +53,12 @@ fun main () {
 val month: Int = 4
 
 fun seasons(month: Int): String {
-    return if (month in 1..2 || month == 12) {
-        "Winter"
-    } else if (month in 3..5) {
-        "Spring"
-    } else if (month in 6..8) {
-        "Summer"
-    } else if (month in 9..11) {
-        "Autumn"
-    } else {
-        "Invalid month"
+    return when (month) {
+        in 1..2, 12 -> "Winter"
+        in 3..5 -> "Spring"
+        in 6..8 -> "Summer"
+        in 9..11 -> "Autumn"
+        else -> "Invalid month"
     }
 }
 
@@ -140,9 +136,9 @@ fun recommends(airTemperature: Int) : String {
 val age: Int = 25
 
 fun filmsСategories(age: Int) : String {
-    return when  {
-        age in 0..12 -> "детские"
-        age in 13..17 -> "подростковые"
+    return when (age) {
+        in 0..12 -> "детские"
+        in 13..17 -> "подростковые"
         else -> "18+"
     }
 }
