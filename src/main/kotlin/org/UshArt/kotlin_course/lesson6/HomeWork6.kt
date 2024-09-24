@@ -130,18 +130,10 @@ val airTemperature: Int = -35
 
 fun recommends(airTemperature: Int) : String {
     return when (airTemperature) {
-        in -30..-1 -> {
-            "куртка, шапка, перчатки"
-        }
-        in 0..14 -> {
-            "ветровка"
-        }
-        in 15..35 -> {
-            "футболка и шорты"
-        }
-        else -> {
-            "не выходить умрешь"
-        }
+        in -30 until -1 -> "куртка, шапка, перчатки"
+        in 0..14 -> "ветровка"
+        in 15..35 -> "футболка и шорты"
+        else -> "не выходить умрешь"
     }
 }
 
