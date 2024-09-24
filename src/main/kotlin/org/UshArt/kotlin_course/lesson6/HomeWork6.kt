@@ -102,14 +102,19 @@ fun calculationOfBonus(shopping: Int) : Int {
 val fileExtension: String = "PDF"
 
 fun fileType(fileExtension: String) : String {
-    return if (fileExtension == "TXT") {
-        "Текстовый документ"
-    } else if (fileExtension == "JPG") {
-        "Изображение"
-    } else if (fileExtension == "PDF") {
-        "Файл"
-    } else {
-        "Неизвестный тип"
+    return when (fileExtension) {
+        "TXT" -> {
+            "Текстовый документ"
+        }
+        "JPG" -> {
+            "Изображение"
+        }
+        "PDF" -> {
+            "Файл"
+        }
+        else -> {
+            "Неизвестный тип"
+        }
     }
 }
 
