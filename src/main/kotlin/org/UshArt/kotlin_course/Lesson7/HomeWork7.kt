@@ -78,5 +78,24 @@ fun main() {
 //        println(i)
 //    }
 
+//    for (i in 1 until 9) {
+//        println(i)
+//    }
 
+//    for (i in 3 until 15) {
+//        println(i)
+//    }
+
+    var number = 1
+    while (number <= 5) {
+        val square = number * number
+        println(square)
+        number++
+    }
+
+//    var number = 5
+//    do {
+//        println(number)
+//        number--
+//    } while (number >= 1)
 }
