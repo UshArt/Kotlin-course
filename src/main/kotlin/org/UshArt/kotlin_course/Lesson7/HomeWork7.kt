@@ -86,16 +86,24 @@ fun main() {
 //        println(i)
 //    }
 
-    var number = 1
-    while (number <= 5) {
-        val square = number * number
-        println(square)
-        number++
-    }
+//    var number = 1
+//    while (number <= 5) {
+//        val square = number * number
+//        println(square)
+//        number++
+//    }
 
 //    var number = 5
 //    do {
 //        println(number)
 //        number--
 //    } while (number >= 1)
+
+    for (i in 1..10) {
+        for (j in 1..10) {
+            val product = i * j
+            print("$product ")
+        }
+        println()
+    }
 }
