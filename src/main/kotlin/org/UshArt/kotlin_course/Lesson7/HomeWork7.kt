@@ -106,11 +106,11 @@ fun main() {
 //        number--
 //    } while (number >= 1)
 
-    var number = 5
-    do {
-        println(number)
-        ++number
-    } while (number < 10)
+//    var number = 5
+//    do {
+//        println(number)
+//        ++number
+//    } while (number < 10)
 
 //    for (i in 1..10) {
 //        for (j in 1..10) {
