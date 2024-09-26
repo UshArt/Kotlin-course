@@ -93,17 +93,30 @@ fun main() {
 //        number++
 //    }
 
+//    var number = 10
+//    while (number >= 5) {
+//        val sum = number
+//        println(sum)
+//        number--
+//    }
+
 //    var number = 5
 //    do {
 //        println(number)
 //        number--
 //    } while (number >= 1)
 
-    for (i in 1..10) {
-        for (j in 1..10) {
-            val product = i * j
-            print("$product ")
-        }
-        println()
-    }
+    var number = 5
+    do {
+        println(number)
+        ++number
+    } while (number < 10)
+
+//    for (i in 1..10) {
+//        for (j in 1..10) {
+//            val product = i * j
+//            print("$product ")
+//        }
+//        println()
+//    }
 }
