@@ -66,8 +66,7 @@ fun main() {
 //    }
 
 //    for (i in 10 downTo 1) {
-//        if (i % 2 == 0)
-//        println(i)
+//        println(i-2)
 //    }
 
 //    for (i in 1..9 step 2) {
@@ -87,10 +86,8 @@ fun main() {
 //    }
 
 //    var number = 1
-//    while (number <= 5) {
-//        val square = number * number
-//        println(square)
-//        number++
+//    while (number++ <= 5) {
+//        println(number * number)
 //    }
 
 //    var number = 10
@@ -108,12 +105,11 @@ fun main() {
 
 //    var number = 5
 //    do {
-//        println(number)
-//        ++number
+//        println(number++)
 //    } while (number < 10)
 
 //    for (i in 1..10) {
-//        if (i == 7) break
+//        if (i == 6) break
 //        println(i)
 //    }
 
@@ -129,20 +125,20 @@ fun main() {
 //        println(i)
 //    }
 
-    var number = 1
-    while (number <= 10) {
-        if (number % 3 == 0) {
-            number++
-            continue
-        }
-        println(number)
-        number++
-    }
+//    var number = 1
+//    while (number <= 10) {
+//        if (number % 3 == 0) {
+//            number++
+//            continue
+//        }
+//        println(number)
+//        number++
+//    }
 
 //    for (i in 1..10) {
 //        for (j in 1..10) {
-//            val product = i * j
-//            print("$product ")
+//            print(i * j)
+//            print(" ")
 //        }
 //        println()
 //    }
