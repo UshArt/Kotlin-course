@@ -113,6 +113,33 @@ fun main() {
 //    } while (number < 10)
 
 //    for (i in 1..10) {
+//        if (i == 7) break
+//        println(i)
+//    }
+
+//    var number = 1
+//    while (number > 0) {
+//        println(number)
+//        if (number == 10) break
+//        number++
+//    }
+
+//    for (i in 1..10) {
+//        if (i % 2 == 0) continue
+//        println(i)
+//    }
+
+    var number = 1
+    while (number <= 10) {
+        if (number % 3 == 0) {
+            number++
+            continue
+        }
+        println(number)
+        number++
+    }
+
+//    for (i in 1..10) {
 //        for (j in 1..10) {
 //            val product = i * j
 //            print("$product ")
