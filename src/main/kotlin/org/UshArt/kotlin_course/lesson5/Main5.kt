@@ -43,21 +43,21 @@ package org.UshArt.kotlin_course.lesson5
 //}
 
 
-fun  main(){
-    printBoxStuff(stuff = "RUS")
-    printBoxStuff(stuff = null)
-}
-
-fun printPrice(price: Double, sale: Int?){
-    val koef = (100 - (sale ?: 0))/100.0
-    println(price * koef)
-}
-
-fun printSiteLang(lang: String?){
-    val defaultLang: String = "Eng"
-    println(lang ?: defaultLang)
-}
-
-fun printBoxStuff(stuff: String?){
-    println(stuff ?: throw Exception("Box is empty"))
-}
+//fun  main(){
+//    printBoxStuff(stuff = "RUS")
+//    printBoxStuff(stuff = null)
+//}
+//
+//fun printPrice(price: Double, sale: Int?){
+//    val koef = (100 - (sale ?: 0))/100.0
+//    println(price * koef)
+//}
+//
+//fun printSiteLang(lang: String?){
+//    val defaultLang: String = "Eng"
+//    println(lang ?: defaultLang)
+//}
+//
+//fun printBoxStuff(stuff: String?){
+//    println(stuff ?: throw Exception("Box is empty"))
+//}
