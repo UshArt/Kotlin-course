@@ -155,4 +155,5 @@ fun multiplicationTable(column: Int, line:Int) {
         }
         println()
     }
+
 }
