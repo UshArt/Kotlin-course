@@ -218,15 +218,17 @@ fun main() {
 //    }
 //    println(f)
 
-    var number = 2
-    var sum = 0
-    while (number <= 100) {
-        if (number % 2 == 0)
-            sum = sum + number
-        number++
+//    var number = 2
+//    var sum = 0
+//    while (number <= 100) {
+//        if (number % 2 == 0)
+//            sum = sum + number
+//        number++
+//    }
+//    println(sum)
+
+    for (i in 1..10) {
+        println(i * 3)
     }
-    println(sum)
-
-
 
 }
