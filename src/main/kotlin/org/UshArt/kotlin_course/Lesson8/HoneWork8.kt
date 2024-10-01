@@ -61,7 +61,7 @@ fun main(){
     println(upperChars("Да я это сделал"))
     println(encrypt("Kotlin"))
     println(decrypt("oKltni"))
-    println(multiplicationTable(20, 15))
+    println(multiplicationTable(15, 25))
 
 }
 
@@ -78,28 +78,28 @@ fun convert(phrase: String): String{
 
 fun dateTime(login: String) {
     val t = login.split(" ")
-    return println("${t[5]}\n${t[6]}")
+    println("${t[5]}\n${t[6]}")
 }
 
 fun creditCard(number: String) {
     val splitNumber = number.split(" ")
-    return println("**** **** **** ${splitNumber[3]}")
+    println("**** **** **** ${splitNumber[3]}")
 }
 
 fun emailFormat(email: String) {
     val newEmail = email.replace("@", " [at] ").replace(".", " [dot] ")
-    return println(newEmail)
+    println(newEmail)
 }
 
 fun filePath(path: String){
     val splitPath = path.split("/")
-    return println(splitPath.last())
+    println(splitPath.last())
 }
 
 fun abbreviation(phrase1: String): String {
     val abbrList = phrase1.split(' ', '-')
     var abbrPhrase = ""
-    for (j in abbrList.indices) { //for (i in 0 until abbrList.length)
+    for (j in abbrList.indices) {
         abbrPhrase += (abbrList[j][0].uppercase())
     }
     return abbrPhrase
@@ -121,13 +121,8 @@ fun encrypt(cipher: String): String{
     }else {
         Unit
     }
-    var encrypted = ""
-    for(i in forCrypt.indices step 2){
-        val symbol1 = forCrypt[i]
-        val symbol2 = forCrypt[i + 1]
-        encrypted += symbol2.toString() + symbol1.toString()
-    }
-    return encrypted
+
+    return decrypt(cipher)
 }
 
 fun decrypt(cipher: String): String{
