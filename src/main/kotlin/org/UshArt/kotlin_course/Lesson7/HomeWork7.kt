@@ -218,7 +218,7 @@ fun main() {
 //    }
 //    println(f)
 
-//    var number = 2
+//    var number = 1
 //    var sum = 0
 //    while (number <= 100) {
 //        if (number % 2 == 0)
@@ -227,8 +227,30 @@ fun main() {
 //    }
 //    println(sum)
 
-    for (i in 1..10) {
-        println(i * 3)
+//    for (i in 1..10) {
+//        println(i * 3)
+//    }
+
+//    val str = "Kotlin."
+//    var i = 0
+//    do {
+//        if (str[i] != '.') {
+//            println(str[i])
+//        } else {
+//            break
+//        }
+//        i++
+//    } while (i < str.length)
+
+    val numbers = listOf(5, 12, 7, 22, 9)
+    var maxNumber = numbers[0]
+    var index = 1
+    while (index < numbers.size) {
+        if (numbers[index] > maxNumber) {
+            maxNumber = numbers[index]
+        }
+        index++
     }
+    println("Наибольшее число в списке: $maxNumber")
 
 }
