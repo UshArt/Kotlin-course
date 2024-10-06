@@ -97,12 +97,13 @@ fun main() {
     val searchString = "четыре"
     println(search(array10, searchString))
 }
+
 fun search(array10: Array<String>, searchString: String?): String {
     if (searchString != null) {
         for (i in array10) {
             if (i.contains(searchString)) {
                 return i
-            } else{
+            } else {
                 Unit
             }
         }
