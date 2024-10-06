@@ -29,7 +29,7 @@ fun main() {
 //Создайте массив из 5 элементов типа Int. Используйте цикл, чтобы присвоить каждому элементу значение, равное его индексу, умноженному на 3.
 
     val array4 = Array(5) { 0 }
-    for (i in array3.indices) {
+    for (i in array4.indices) {
         array4[i] = (i * 3)
     }
     println(array4.toList())
