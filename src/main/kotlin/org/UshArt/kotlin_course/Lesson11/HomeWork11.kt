@@ -67,14 +67,14 @@ fun main() {
 
     val fistMapFor9: Map<Int, String> = mapOf(10 to "негритят", 20 to "век фокс")
 
-    val sefondMapFor9: Map<Int, String> = mapOf(12 to "апостолов", 7 to "дней недели")
+    val secondMapFor9: Map<Int, String> = mapOf(12 to "апостолов", 7 to "дней недели")
 
     val mutableMapFor9: MutableMap<Int,String> = mutableMapOf()
 
     for ((numbers, info) in fistMapFor9) {
         mutableMapFor9[numbers] = info
     }
-    for ((numbers, info) in sefondMapFor9) {
+    for ((numbers, info) in secondMapFor9) {
         mutableMapFor9[numbers] = info
     }
 
