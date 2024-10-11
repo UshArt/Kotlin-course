@@ -91,7 +91,7 @@ fun main() {
 // Распечатай полученное множество.
 
     val set1 = mutableSetOf("Яблоко", "Арбуз", "Дыня")
-    val set2 = mutableSetOf("Порш", "Ауди", "Вольво")
+    val set2 = mutableSetOf("Порше", "Ауди", "Вольво")
     val set3 = mutableSetOf("Гвоздь", "Палка", "Молоток")
     val map11 = mapOf<Int, MutableSet<String>>(1 to set1, 2 to set2, 3 to set3)
     println(map11)
