@@ -1,4 +1,4 @@
-package com.UshArt.org.UshArt.kotlin_course.Lesson11
+package org.UshArt.kotlin_course.Lesson11
 
 fun main() {
 
