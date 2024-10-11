@@ -44,12 +44,12 @@ fun main() {
 //Задание 7: Перебор Словаря в Цикле
 //Создайте словарь (ключи Double, значения Int) и выведи в цикле результат деления ключа на значение. Не забудь обработать деление на 0 (в этом случае выведи слово “бесконечность”)
 
-    val MapFor7: Map<Double, Int> = mapOf(10.1 to 2, 2.2 to 5, 4.0 to 9, 0.0 to 10)
+    val mapFor7: Map<Double, Int> = mapOf(10.1 to 2, 2.2 to 0, 4.0 to 9, 0.0 to 10)
 
-    println(MapFor7)
+    println(mapFor7)
 
-    for (entreis in MapFor7)
-        if (entreis.key == 0.0) {
+    for (entreis in mapFor7)
+        if (entreis.value == 0) {
             println("бесконечность")
         } else println(entreis.key / entreis.value)
 
