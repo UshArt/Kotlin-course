@@ -1,0 +1,83 @@
+package org.UshArt.kotlin_course.Lesson18.HomeWork
+
+import org.UshArt.kotlin_course.Lesson18.HomeWork.animals.Animal
+import org.UshArt.kotlin_course.Lesson18.HomeWork.animals.Bird
+import org.UshArt.kotlin_course.Lesson18.HomeWork.animals.Cat
+import org.UshArt.kotlin_course.Lesson18.HomeWork.animals.Dog
+import org.UshArt.kotlin_course.Lesson18.HomeWork.printer.InkjetPrinter
+import org.UshArt.kotlin_course.Lesson18.HomeWork.printer.LaserPrinter
+import org.UshArt.kotlin_course.Lesson18.HomeWork.shapes.Circle
+import org.UshArt.kotlin_course.Lesson18.HomeWork.shapes.Shape
+import org.UshArt.kotlin_course.Lesson18.HomeWork.shapes.Square
+import org.UshArt.kotlin_course.Lesson18.HomeWork.shapes.Triangle
+
+
+fun main() {
+    val animals: List<Animal> = listOf(Dog(), Cat(), Bird())
+    val sounds = listOf("Bark", "Meow", "Tweet")
+    for (i in animals.indices) {
+        animals[i].makeSound(sounds[i])
+    }
+
+    val figures: List<Shape> = listOf(Square(11.0), Circle(10.0), Triangle(5.0, 3.0, 4.0))
+    figures.forEach { figure ->
+        println(figure.figureArea())
+    }
+
+    val text = "Ojcze nasz, któryś jest w niebie, święć się imię Twoje" +
+            "przyjdź królestwo Twoje" +
+            "bądź wola Twoja jako w niebie tak i na ziemi" +
+            "chleba naszego powszedniego daj nam dzisiaj;" +
+            "i odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom" +
+            "i nie wódź nas na pokuszenie" +
+            "ale nas zbaw ode Złego" +
+            "Amen."
+    println("-----Лазерник------")
+    val laserPrinter = LaserPrinter()
+    laserPrinter.print(text)
+    println("-----Струйник------")
+    val inkjetPrinter = InkjetPrinter()
+    inkjetPrinter.print(text)
+
+    println("-----Корзина покупок------")
+    val cart = ShoppingCart()
+    cart.addToCart(1)
+    cart.addToCart(2, 3)
+    cart.addToCart(mapOf(3 to 2, 4 to 1))
+    cart.addToCart(listOf(1, 2, 5, 6, 7, 8, 9))
+    println(cart)
+
+
+    println("-----Логгер------")
+    val infoMessage = "Это информационное сообщение"
+    val warningMessage = "Это предупреждение"
+    val errorMessage = "Это сообщение об ошибке"
+    val debugMessage = "Это сообщение об отладке"
+
+    val logger1 = Logger()
+    logger1.log(infoMessage)
+
+    println("-----Тест логгера 1------")
+    logger1.log("WARNING", warningMessage)
+    logger1.log("ERROR", errorMessage)
+    logger1.log("DEBUG", debugMessage)
+
+    println("-----Тест логгера 2------")
+    val logEntries = listOf(
+        "INFO" to infoMessage,
+        "WARNING" to warningMessage,
+        "ERROR" to errorMessage,
+        "DEBUG" to debugMessage
+    )
+
+    for ((level, message) in logEntries) {
+        logger1.log(level, message)
+    }
+    println("-----Тест логгера 3------")
+    logger1.log(listOf("Сообщение раз", "Сообщение два", "Сообщение три"))
+
+    println("-----Тест логгера 4------")
+    val dictionary = mapOf<Int, String>()
+    val maxKey = dictionary.keys.maxOrNull()
+        ?: return logger1.log(NoSuchElementException("Словарь пустой. Нет никаких ключей"))
+}
