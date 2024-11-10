@@ -1,4 +1,4 @@
-package com.UshArt.org.UshArt.kotlin_course.Lesson12
+package org.UshArt.kotlin_course.Lesson12
 
 fun main(){
     println("----Задание 1-----")
